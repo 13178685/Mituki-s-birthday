@@ -10470,3 +10470,7 @@ body.q3-page.q3-to-q4-light::before {
     }
 
 }
+/* Q2 宝箱の鍵を下にずらす */
+#treasureChest .chest-lock {
+    top: 60% !important;
+}
