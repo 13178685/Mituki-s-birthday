@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>The Last Key</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="q4-page">
+
+
+<!-- ========================================
+     Q4 MAIN
+======================================== -->
+
+<div class="q4-container">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <p class="q4-label">
+        FINAL ARCHIVE // 04
+    </p>
+
+
+    <div class="q4-line"></div>
+
+
+    <h1 class="q4-title">
+        THE LAST KEY
+    </h1>
+
+
+    <!-- =========================
+         DATE
+    ========================== -->
+
+    <div class="q4-date">
+        10 / 03
+    </div>
+
+
+    <!-- =========================
+         QUESTION
+    ========================== -->
+
+    <p class="q4-question">
+
+        これからの私たちに<br>
+        必要なものは…
+
+    </p>
+
+
+    <!-- =========================
+         ANSWER
+    ========================== -->
+
+    <div class="q4-inputs">
+
+        <input
+            maxlength="1"
+            autocomplete="off"
+        >
+
+        <input
+            maxlength="1"
+            autocomplete="off"
+        >
+
+        <input
+            maxlength="1"
+            autocomplete="off"
+        >
+
+        <input
+            maxlength="1"
+            autocomplete="off"
+        >
+
+    </div>
+
+
+    <button id="q4Check">
+        UNLOCK
+    </button>
+
+
+    <p id="q4Message"></p>
+
+
+</div>
+
+
+<!-- ========================================
+     LOCK SCREEN
+======================================== -->
+
+<div id="q4LockScreen">
+
+    <div class="q4-lock-content">
+
+        <p class="q4-system">
+            FINAL VERIFICATION
+        </p>
+
+
+        <h2>
+            KEY ACCEPTED
+        </h2>
+
+
+        <div class="q4-key-light"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================
+     FINAL TREASURE CHEST
+======================================== -->
+
+<div
+    class="treasure-chest"
+    id="finalChest"
+>
+
+
+    <!-- 宝箱から漏れる光 -->
+
+    <img
+        src="chest-glow.png"
+        class="chest-glow-image"
+        alt=""
+    >
+
+
+    <!-- 宝箱本体 -->
+
+    <img
+        src="chest-body.png"
+        class="chest-body-image"
+        alt="宝箱"
+    >
+
+
+    <!-- 宝箱のフタ -->
+
+    <img
+        src="chest-lid.png"
+        class="chest-lid-image"
+        alt=""
+    >
+
+</div>
+
+
+<!-- ========================================
+     TAP TO OPEN
+======================================== -->
+
+<p id="chestTapText">
+    TAP TO OPEN
+</p>
+
+
+<!-- ========================================
+     MESSAGE CARD
+======================================== -->
+
+<div
+    class="final-card"
+    id="finalCard"
+>
+
+
+    <p class="card-small">
+        ONE LAST MESSAGE
+    </p>
+
+
+    <div class="card-line"></div>
+
+
+    <h2>
+        To Mitsuki
+    </h2>
+
+
+    <p class="card-text">
+
+        ここまで全部解いてくれてありがとう。
+
+        <br><br>
+
+        当日一緒にお祝い出来なくてごめんね。
+        明日全力でお祝いするから楽しみにしてて！
+        お誕生日おめでとう！
+
+        <br><br>
+
+        そして最後のプレゼントは，
+        画面の中にはありません。
+
+    </p>
+
+
+    <p class="card-final">
+        最後のヒントのありかは…
+    </p>
+
+
+    <div class="card-clue">
+
+        <span>
+            ONE LAST CLUE
+        </span>
+
+
+        <strong>
+            可愛いネコちゃん
+        </strong>
+
+    </div>
+
+
+</div>
+
+
+<!-- ========================================
+     JAVASCRIPT
+======================================== -->
+
+<script src="question4.js"></script>
+
+
+</body>
+
+</html>

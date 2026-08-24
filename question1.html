@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Memories</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="q1-page">
+
+
+<div class="container q1-container">
+
+
+    <!-- =========================
+         ヘッダー
+    ========================== -->
+
+    <div class="q1-heading">
+
+        <p class="archive-label">
+            MEMORY ARCHIVE
+        </p>
+
+        <div class="archive-line"></div>
+
+        <h1>
+            OUR MEMORIES
+        </h1>
+
+        <p class="archive-subtitle">
+            TRACE THE MOMENTS
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         問題文
+    ========================== -->
+
+    <div class="q1-intro">
+
+        <p>
+            2人の思い出をたどってみよう。
+        </p>
+
+        <p>
+            写真を撮った順番に並べたとき，<br>
+            写真についている数字が答えになる。
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         写真
+    ========================== -->
+
+    <div class="photos">
+
+
+        <div class="photo-card">
+
+            <div class="photo-number">
+                01
+            </div>
+
+            <img
+                src="photoA.jpg"
+                class="zoom"
+            >
+
+            <p>
+                PHOTO A
+            </p>
+
+            <span>
+                9
+            </span>
+
+        </div>
+
+
+
+        <div class="photo-card">
+
+            <div class="photo-number">
+                02
+            </div>
+
+            <img
+                src="photoB.jpg"
+                class="zoom"
+            >
+
+            <p>
+                PHOTO B
+            </p>
+
+            <span>
+                2
+            </span>
+
+        </div>
+
+
+
+        <div class="photo-card">
+
+            <div class="photo-number">
+                03
+            </div>
+
+            <img
+                src="photoC.jpg"
+                class="zoom"
+            >
+
+            <p>
+                PHOTO C
+            </p>
+
+            <span>
+                0
+            </span>
+
+        </div>
+
+
+
+        <div class="photo-card">
+
+            <div class="photo-number">
+                04
+            </div>
+
+            <img
+                src="photoD.jpg"
+                class="zoom"
+            >
+
+            <p>
+                PHOTO D
+            </p>
+
+            <span>
+                6
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================
+         回答
+    ========================== -->
+
+    <div class="q1-answer-area">
+
+        <p class="answer-label">
+            ENTER THE MEMORY CODE
+        </p>
+
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="4 DIGITS"
+            maxlength="4"
+            autocomplete="off"
+        >
+
+
+        <button id="checkButton">
+            CHECK
+        </button>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================
+     結果オーバーレイ
+========================== -->
+
+<div id="resultOverlay">
+
+    <div class="resultBox q1-resultBox">
+
+
+        <p class="memory-status">
+            MEMORY ARCHIVE
+        </p>
+
+
+        <h2 id="resultTitle"></h2>
+
+
+        <p id="resultMessage"></p>
+
+
+        <button
+            id="nextButton"
+            style="display:none;"
+        >
+            THE NEXT MEMORY
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     写真拡大
+========================== -->
+
+<div id="modal">
+
+    <img id="modalImage">
+
+</div>
+
+
+
+<script src="result.js"></script>
+
+<script src="question1.js"></script>
+
+
+</body>
+
+</html>

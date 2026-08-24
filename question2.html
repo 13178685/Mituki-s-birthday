@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>The Key</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="q2-page">
+
+
+<div class="container q2-container">
+
+
+    <!-- =========================
+         タイトル
+    ========================== -->
+
+    <div class="q2-heading">
+
+        <div class="key-symbol">
+
+            <div class="key-hole"></div>
+
+        </div>
+
+        <h1>
+            THE KEY
+        </h1>
+
+        <p class="q2-subtitle">
+            MEMORY ACCESS
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         暗号
+    ========================== -->
+
+    <div class="cipher-display">
+
+        <span>D</span>
+        <span>J</span>
+        <span>V</span>
+        <span>K</span>
+
+    </div>
+
+
+    <div class="cipher-line"></div>
+
+
+    <!-- =========================
+         問題文
+    ========================== -->
+
+    <div class="q2-message">
+
+        <p>
+            時計の針を巻き戻せ。
+        </p>
+
+        <p>
+            前の問題を思い出して。
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         ヒント
+    ========================== -->
+
+    <button
+        id="hintButton"
+        class="q2-hint-button"
+    >
+        HINT
+    </button>
+
+
+    <div id="hintMessage"></div>
+
+
+    <!-- =========================
+         回答
+    ========================== -->
+
+    <div class="answer-area">
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="ENTER CODE"
+            maxlength="4"
+            autocomplete="off"
+        >
+
+
+        <button
+            id="checkButton"
+            class="q2-check-button"
+        >
+            UNLOCK
+        </button>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================
+     結果オーバーレイ
+========================== -->
+
+<div id="resultOverlay">
+
+    <div class="resultBox q2-resultBox">
+
+
+        <!-- 結果タイトル -->
+
+        <h2 id="resultTitle"></h2>
+
+
+        <!-- 結果メッセージ -->
+
+        <p id="resultMessage"></p>
+
+
+
+        <!-- =====================
+             宝箱
+        ====================== -->
+
+        <div id="treasureArea">
+
+            <div id="treasureChest">
+
+                <div class="chest-lid"></div>
+
+                <div class="chest-body">
+
+                    <div class="chest-lock"></div>
+
+                </div>
+
+            </div>
+
+
+            <p id="chestText">
+                TAP TO OPEN
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================
+             チケット
+        ====================== -->
+
+        <div id="ticketCard">
+
+
+            <div class="ticketIcon">
+
+                <div class="cup">
+
+                    <div class="cup-body"></div>
+
+                    <div class="cup-handle"></div>
+
+                </div>
+
+            </div>
+
+
+            <p class="ticket-label">
+                REWARD UNLOCKED
+            </p>
+
+
+            <h2>
+                スタバ TICKET
+            </h2>
+
+
+            <div class="ticket-divider"></div>
+
+
+            <h3>
+                TICKET GET
+            </h3>
+
+
+            <p>
+                息抜きに使ってね<br>
+                一息ついて面接へれっつごー！！
+            </p>
+
+
+            <small>
+                KEEP THIS MEMORY
+            </small>
+
+
+        </div>
+
+
+
+        <!-- =====================
+             次へ
+        ====================== -->
+
+        <button
+            id="nextButton"
+            style="display:none;"
+        >
+            QUESTION 3
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<script src="result.js"></script>
+
+<script src="question2.js"></script>
+
+
+</body>
+
+</html>
